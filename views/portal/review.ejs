@@ -1,0 +1,26 @@
+<div class="review-body">
+    <div class="container">
+        <h1>Review Your Submission</h1>
+        <% if (applicants.length > 0) { %>
+            <% applicants.forEach(applicant => { %>
+                <div class="applicant">
+                    <p><strong>Name:</strong> <%= applicant.name %></p>
+                    <p><strong>Email:</strong> <%= applicant.email %></p>
+                    <p><strong>Gender:</strong> <%= applicant.gender %></p>
+                    <p><strong>Institute Name:</strong> <%= applicant.institute %></p>
+                    <p><strong>Type:</strong> <%= applicant.type %></p>
+                    <p><strong>Course:</strong> <%= applicant.course %></p>
+                    <p><strong>Course Specialization:</strong> <%= applicant.specialization %></p>
+                    <p><strong>Graduation Year:</strong> <%= applicant.graduationYear %></p>
+                    <p><strong>GitHub ID:</strong> <%= applicant.githubId %></p>
+                    <p><strong>LinkedIn ID:</strong> <%= applicant.linkedinId %></p>
+                    <% if (applicant.resume.data) { %>
+                        <a href="/resume/<%= applicant._id %>" class="resume-link" target="_blank">View Resume</a>
+                    <% } %>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>No applicants found.</p>
+        <% } %>
+    </div>
+    </div>
