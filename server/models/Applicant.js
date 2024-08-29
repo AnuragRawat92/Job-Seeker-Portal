@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+// Define the schema for the Applicant model
 const applicantSchema = new mongoose.Schema({
     name: String,
     email: String,
@@ -16,5 +16,5 @@ const applicantSchema = new mongoose.Schema({
         contentType: String
     }
 });
-
+// Create and export the Applicant model based on the schema
 module.exports = mongoose.model('Applicant', applicantSchema);
