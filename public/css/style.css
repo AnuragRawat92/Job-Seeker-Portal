@@ -1,3 +1,4 @@
+/* General body styling */
 body {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #f4f4f4;
@@ -6,6 +7,7 @@ body {
     padding: 0;
 }
 
+/* Header styling */
 header {
     background-color: #007bff;
     color: white;
@@ -14,6 +16,7 @@ header {
     margin-bottom: 30px;
 }
 
+/* Form container styling */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -23,6 +26,7 @@ form {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Label styling */
 label {
     display: block;
     font-size: 16px;
@@ -30,6 +34,7 @@ label {
     color: #444444;
 }
 
+/* Input fields and select dropdown styling */
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -44,6 +49,7 @@ select {
     color: #333333;
 }
 
+/* Button styling */
 button {
     width: 100%;
     padding: 12px;
@@ -55,41 +61,23 @@ button {
     cursor: pointer;
 }
 
+/* Button hover effect */
 button:hover {
     background-color: #0056b3;
 }
-.submit-body{
+
+/* Styling for the success message page */
+.submit-body {
     font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .success-message {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            max-width: 600px;
-}
-.note {
-    text-align: center; 
-    margin-top: 20px; 
-    font-weight: bold;
-    font-family: Arial, sans-serif; 
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.note a {
-    color: #007bff; 
-    text-decoration: none; 
-}
-
-.note a:hover {
-    text-decoration: underline; 
-}
+/* Success message container */
 .success-message {
     background-color: #ffffff;
     padding: 30px;
@@ -98,17 +86,42 @@ button:hover {
     text-align: center;
     max-width: 600px;
 }
+
+/* Note section styling */
+.note {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for links in note section */
+.note a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Link hover effect in note section */
+.note a:hover {
+    text-decoration: underline;
+}
+
+/* Success message text styling */
 .success-message h1 {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
 }
+
+/* Success message paragraph styling */
 .success-message p {
     font-size: 18px;
     color: #555;
     margin-top: 10px;
     line-height: 1.5;
 }
+
+/* Review link styling */
 .review-link {
     font-size: 18px;
     color: #0066cc;
@@ -116,15 +129,21 @@ button:hover {
     display: inline-block;
     margin-top: 20px;
 }
+
+/* Review link hover effect */
 .review-link:hover {
     text-decoration: underline;
 }
-.review-body{
+
+/* Review page body styling */
+.review-body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
+
+/* Container for review page content */
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -134,19 +153,23 @@ button:hover {
     border-radius: 8px;
 }
 
+/* Heading styling in review page */
 h1 {
     text-align: center;
     color: #333;
 }
 
+/* Applicant section styling */
 .applicant {
     margin-bottom: 20px;
 }
 
+/* Paragraph styling */
 p {
     margin: 5px 0;
 }
 
+/* Resume link styling */
 .resume-link {
     display: inline-block;
     padding: 10px 15px;
@@ -156,18 +179,23 @@ p {
     border-radius: 5px;
 }
 
+/* Resume link hover effect */
 .resume-link:hover {
     background-color: #0056b3;
 }
-.login-body{
+
+/* Login page body styling */
+.login-body {
     font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
+
+/* Login container styling */
 .login-container {
     background: #fff;
     padding: 20px;
@@ -176,16 +204,22 @@ p {
     max-width: 400px;
     width: 100%;
 }
+
+/* Heading styling in login page */
 h1 {
     margin-bottom: 20px;
     font-size: 24px;
     color: #333;
 }
+
+/* Label styling in login page */
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
 }
+
+/* Input field styling in login page */
 input {
     width: 100%;
     padding: 10px;
@@ -193,6 +227,8 @@ input {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+
+/* Button styling in login page */
 button {
     background-color: #007bff;
     border: none;
@@ -202,9 +238,13 @@ button {
     cursor: pointer;
     font-size: 16px;
 }
+
+/* Button hover effect in login page */
 button:hover {
     background-color: #0056b3;
 }
+
+/* Error message styling */
 .message {
     text-align: center;
     margin-top: 10px;
