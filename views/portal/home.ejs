@@ -1,19 +1,23 @@
 <header>
-    <h1>Applicant Registration</h1>
+    <h1>Applicant Registration</h1> <!-- Header for the registration page -->
 </header>
+
 <div class="note">
-    <p>If you have already applied, you can <a href="/login">view your application here</a>.</p>
+    <p>If you have already applied, you can <a href="/login">view your application here</a>.</p> <!-- Note for applicants to view their application if they have already applied -->
 </div>
+
 <main>
     <form id="registrationForm" action="/api/register" method="POST" enctype="multipart/form-data">
+        <!-- Form for applicant registration -->
         <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required> <!-- Field for applicant's full name -->
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required> <!-- Field for applicant's email address -->
 
         <label for="gender">Gender:</label>
         <select id="gender" name="gender" required>
+            <!-- Dropdown for selecting gender -->
             <option value="">Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
@@ -21,10 +25,11 @@
         </select>
 
         <label for="institute">Institute Name:</label>
-        <input type="text" id="institute" name="institute" required>
+        <input type="text" id="institute" name="institute" required> <!-- Field for institute name -->
 
         <label for="type">Type:</label>
         <select id="type" name="type" required>
+            <!-- Dropdown for selecting type of applicant -->
             <option value="">Select Type</option>
             <option value="fresher">Fresher</option>
             <option value="professional">Professional</option>
@@ -33,21 +38,23 @@
         </select>
 
         <label for="course">Course:</label>
-        <input type="text" id="course" name="course" required>
+        <input type="text" id="course" name="course" required> <!-- Field for course name -->
 
         <label for="specialization">Course Specialization:</label>
-        <input type="text" id="specialization" name="specialization" required>
+        <input type="text" id="specialization" name="specialization" required> <!-- Field for course specialization -->
 
         <label for="graduationYear">Graduation Year:</label>
-        <input type="number" id="graduationYear" name="graduationYear" required min="1900" max="2099">
+        <input type="number" id="graduationYear" name="graduationYear" required min="1900" max="2099"> <!-- Field for graduation year with validation -->
+
         <label for="github">GitHub ID:</label>
-        <input type="text" id="github" name="github" required>
+        <input type="text" id="github" name="github" required> <!-- Field for GitHub ID -->
 
         <label for="linkedin">LinkedIn ID:</label>
-        <input type="text" id="linkedin" name="linkedin" required>
-        <label for="resume">Upload Resume:</label>
-        <input type="file" id="resume" name="resume" required>
+        <input type="text" id="linkedin" name="linkedin" required> <!-- Field for LinkedIn ID -->
 
-        <button type="submit">Submit Application</button>
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" required> <!-- File upload field for resume -->
+
+        <button type="submit">Submit Application</button> <!-- Submit button for the form -->
     </form>
-    </main>
+</main>
