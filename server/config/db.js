@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const Grid = require('gridfs-stream');
-
+// Variable to hold GridFS instance
 let gfs;
 
 const connectdb = async () => {
@@ -15,12 +15,14 @@ const connectdb = async () => {
         const conn = await mongoose.connect(mongoUri, {
             
         });
-
+// Log successful connection
         console.log(`Connection successful: ${conn.connection.host}`);
 
         
         gfs = Grid(conn.connection.db, mongoose.mongo);
+         // Specify the collection name for GridFS
         gfs.collection('resumes'); 
+        // Return the database connection
         return conn.connection.db; 
     } catch (err) {
         console.error('Database connection error:', err);
